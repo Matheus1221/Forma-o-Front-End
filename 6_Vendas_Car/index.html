@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venda seu Computador</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="header">
+      <h3>Cadastre seu computador para vender rápido!</h3>
+    </div>
+    <div class="form-container">
+      <div class="form-header">
+        <p>Formulário</p>
+      </div>
+      <div class="form-body">
+        <h1 class="form-title">Venda fácil seu computador!</h1>
+        <p>
+          Descreva as caracteristicas e marque os opcionais que ele possui
+        </p>
+        <form>
+          <div class="box-input">
+            <label for="title">Título do anúncio <span class="required-field">*</span></label>
+            <input type="text" name="title" id="title" class="block" placeholder="Um título para anúnciar seu PC" minlength="1" maxlength="30" required>
+          </div>
+          <div class="box-input">
+            <label for="price">Preço <span class="required-field">*</span></label>
+            <input type="number" name="price" id="price" class="block" placeholder="Preço do Produto" required>
+          </div>
+          <div class="box-input">
+            <label for="description">Descrição<span class="required-field">*</span></label>
+            <textarea name="description" id="description" class="block" placeholder="Aqui vão os detalhes do PC">
+
+            </textarea>
+          </div>
+          <div class="box-input">
+            <label for="brand">Marca do local comprado<span class="required-field">*</span></label>
+            <input type="text" name="brand" id="brand" class="block" placeholder="Marca do Computador" required>
+          </div>
+          <div class="box-input">
+            <label for="model">Título do anúncio <span class="required-field">*</span></label>
+            <input type="text" name="model" id="model" class="block" placeholder="Modelo do veiculo" required>
+          </div>
+          <div class="box-input">
+            <label for="usage-time">Tempo de Uso <span class="required-field">*</span></label>
+            <input type="text" name="usage-time" id="usage-time" class="block" placeholder="Tempo de Uso do PC" required>
+          </div>
+          <div class="box-input">
+            <label for="purchase_date">Data de Compra<span class="required-field">*</span></label>
+            <input type="date" name="purchase_date" id="purchase_date" class="block" required>
+          </div>
+          <div class="box-input">
+            <p>Tipo do Computador</p><span class="required-field">*</span>
+            <input type="radio" id="gamer" name="type_model">
+            <label for="gamer">Gamer</label>
+            <input type="radio" id="work" name="type_model">
+            <label for="work">Trabalho</label>
+          </div>
+          <div class="optional-box">
+            <p>Opcionais</p>
+            <ul class="optional-list">
+              <li>
+                <input type="checkbox" id="video_board" name="optional[]" value="video_board">
+                <label for="video_board">Placa de Video</label>
+              </li>
+              <li>
+                <input type="checkbox" id="ssd_nvme" name="optional[]" value="ssd_nvme">
+                <label for="ssd_nvme">Entrada NVME M2</label>
+              </li>
+              <li>
+                <input type="checkbox" id="disc" name="optional[]" value="disc">
+                <label for="disc">Entrada de Disco</label>
+              </li>
+              <li>
+                <input type="checkbox" id="wifi_plate" name="optional[]" value="wifi_plate">
+                <label for="wifi_plate">Placa Wi-fi</label>
+              </li>
+            </ul>
+          </div>
+          <div class="optional-box">
+            <ul class="optional-list">
+              <li>
+                <input type="checkbox" id="peripherals" name="optional[]" value="peripherals">
+                <label for="peripherals">Periféricos</label>
+              </li>
+              <li>
+                <input type="checkbox" id="win_option" name="optional[]" value="win_option">
+                <label for="win_option">Formatação para Windows atual</label>
+              </li>
+              <li>
+                <input type="checkbox" id="funs" name="optional[]" value="funs">
+                <label for="funs">Coolers Adicionais</label>
+              </li>
+              <li>
+                <input type="checkbox" id="monitor" name="optional[]" value="monitor">
+                <label for="monitor">Monitor Adicional</label>
+              </li>
+            </ul>
+          </div>
+          <div class="box-input">
+            <p>Fotos do Computador: <span class="require-field">*</span></p>
+            <input type="file" multiple accept="image/png, image/jpg" id="images" name="images" required>
+          </div>
+          <input type="submit" value="Enviar" class="btn-submit">
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
